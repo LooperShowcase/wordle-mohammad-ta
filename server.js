@@ -1,7 +1,7 @@
 const { request, response } = require("express");
 const express = require("express");
 const theAnswer = "hello";
-
+const port = process.env.PORT || 3000
 const server = express();
 server.get("/guess/:word", (request, response) => {
   const userWord = request.params.word;
@@ -21,6 +21,6 @@ server.get("/guess/:word", (request, response) => {
 
 server.use(express.static("public"));
 
-server.listen(3000, () => {
+server.listen(port, () => {
   console.log("Server is running on port 3000 ");
 });
