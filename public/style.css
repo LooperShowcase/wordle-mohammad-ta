@@ -1,0 +1,31 @@
+.word {
+  display: flex;
+}
+
+.char {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(35, 30, 30, 0.879);
+}
+
+body {
+  text-align: center;
+  background-color: rgb(69, 65, 65);
+}
+
+.words {
+  width: 100%;
+}
+
+.word {
+  justify-content: center;
+}
+
+.char {
+  /* center chars */
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 64px;
+}
